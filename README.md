@@ -70,9 +70,12 @@ Este es un sistema simple para gestionar equipos de fútbol y sus partidos. Perm
 
 - Comentar las funciones del script.
 
-## Aplicacion desarrollada por Santiago Polanco
-## Editado por (Felipe Silva)[https://github.com/AND3SIL4/]
+
 
 ---
+
+Aplicacion desarrollada por Santiago Polanco
+
+Editado por [Felipe Silva](https://github.com/AND3SIL4/)
 
 Ultima modificación | Junio 13, 2024
