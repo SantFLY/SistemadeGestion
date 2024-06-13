@@ -45,11 +45,21 @@ class ConsoleView:
         print("║        AGREGAR NUEVO PARTIDO    ║")
         print("╚═════════════════════════════════╝")
         team1 = input("Ingrese el nombre del equipo 1: ")
-        team2 = input("Ingrese el nombre del equipo 2: ")
-        score1 = int(input("Ingrese el resultado del equipo 1: "))
-        score2 = int(input("Ingrese el resultado del equipo 2: "))
+        team2 = input("Ingrese el nombre del equipo 2: ")        
+
+        # Validar que el input ingresado sea de tipo numerico
+        while True:
+            try:
+                score1 = int(input("Ingrese el resultado del equipo 1: "))
+                score2 = int(input("Ingrese el resultado del equipo 2: "))
+                break
+            except ValueError:
+                print("Error: Debe ingresar un valor numérico.")
+        # Ingresar fecha del resultado        
         date = input("Ingrese la fecha del partido (dd/mm/yyyy): ")
+        # Retornar datos
         return team1, team2, score1, score2, date
+        
 
     def truncate_name(self, name, length=14):
         if len(name) > length:
